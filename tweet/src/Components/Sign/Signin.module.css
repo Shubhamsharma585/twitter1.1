@@ -1,0 +1,35 @@
+ 
+
+.sign
+{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 5%;
+} 
+
+.cont
+{
+    border: 0px solid black;
+    padding-top: 30px;
+    height: 200px;
+}
+
+.cont>input
+{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 30px;
+    width: 70%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+.cont>input:focus
+{
+    outline: none;
+}
