@@ -1,29 +1,31 @@
 import {
     REGISTER_REQUEST, REGISTER_SUCCESS, LOGIN_REQUEST,
-    LOGIN_SUCCESS, LOGOUT_SUCCESS } from "./actiontype"
+    LOGIN_SUCCESS, LOGOUT_SUCCESS, TWEET_SUCCESS, FOLLOW_SUCCESS  } from "./actiontype"
 import Axios from "axios"
 
 
 
 
 const initstate = {
-    object_id: "",
+    object_id: "", 
     isloggedIn: false,
-    isloggedOut: true, 
+    isloggedOut: true,  
     isloading: false, 
     iserror: false,
-    first_name: "",
-    last_name: "", 
-    number: "", 
+    name: "",
+    phone: "", 
     email: "",
     email_verified: false,
     image_url: "",
     password: "",
-    gender: "",
+    tweets: [],
+    following: [],
+    follower: []
 }
 
 
 function regireducer(state = initstate, {type, payload}) {
+     console.log(type,payload)
 
    switch(type)
    {
@@ -44,14 +46,15 @@ function regireducer(state = initstate, {type, payload}) {
                 isloading: false,
                 iserror: false,
                 object_id: payload._id,
-                first_name: payload.first_name,
-                last_name: payload.last_name,
-                number: payload.number,
+                name: payload.name,
+                phone: payload.phone,
                 email: payload.email,
                 email_verified: false,
                 image_url: "",
                 password: payload.password,
-                gender: payload.gender
+                tweets: payload.tweets,
+                following: payload.following,
+                follower: payload.follower
             }
         }
         case LOGIN_REQUEST:
@@ -71,19 +74,14 @@ function regireducer(state = initstate, {type, payload}) {
                     isloggedOut: false, 
                     isloading: false,
                     object_id: payload._id,
-                    first_name: payload.first_name,
-                    last_name: payload.last_name,
-                    number: payload.number,
+                    name: payload.name,
+                    phone: payload.phone,
                     email: payload.email,
-                    email_verified: payload.emailVerified,
                     image_url: "",
                     password: payload.password,
-                    gender: payload.gender,
-                    address: payload.address,
-                    favorite: payload.favorite,
-                    orders: payload.orders,
-                    cart: payload.cart,
-                    wallet: payload.wallet
+                    tweets: payload.tweets,
+                    following: payload.following,
+                    follower: payload.follower
                 }
             }
         
@@ -96,6 +94,44 @@ function regireducer(state = initstate, {type, payload}) {
                     isloggedIn: false
                 }
             }
+            case TWEET_SUCCESS:
+                {
+                 
+                    return {
+                        ...state,
+                        isloggedIn: true,
+                        isloggedOut: false, 
+                        isloading: false,
+                        object_id: payload._id,
+                        name: payload.name,
+                        phone: payload.phone,
+                        email: payload.email,
+                        image_url: "",
+                        password: payload.password,
+                        tweets: payload.tweets,
+                        following: payload.following,
+                        follower: payload.follower
+                    }
+                }
+                case FOLLOW_SUCCESS:
+                    {
+                     
+                        return {
+                            ...state,
+                            isloggedIn: true,
+                            isloggedOut: false, 
+                            isloading: false,
+                            object_id: payload._id,
+                            name: payload.name,
+                            phone: payload.phone,
+                            email: payload.email,
+                            image_url: "",
+                            password: payload.password,
+                            tweets: payload.tweets,
+                            following: payload.following,
+                            follower: payload.follower
+                        }
+                    }   
         
             default:
                 return { 

@@ -1,0 +1,77 @@
+ 
+ .cover
+ {
+    height: 160px;
+    border: black 0px solid;
+ }
+ .dp
+ {
+    height: 150px;
+    border: white 4px solid;
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: -40px;
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+    left: 15px;
+ } 
+ .details
+ {
+    height: 120px;
+    border: black 0px solid;
+    padding-left: 5%;
+ }
+ .tweets
+ {
+    min-height: 550px;
+    border: solid 0px lightgray;
+ }
+
+ .name
+ {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
+ .usr
+ {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(79, 79, 79);
+    margin-top: 0px;
+ }
+ 
+ 
+ span
+ {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+ }
+
+ .tw
+ {
+     text-align: left;
+     margin-left: 5%;
+     margin-top: 0px;
+     width: fit-content;
+     padding-bottom: 15px;
+     border-bottom: 5px solid #1DA1F2;
+ }
+
+ .tweet
+ {
+   border: solid 1px #1DA1F2;
+   border-radius: 10px;
+   height: 100px;
+   background-color:#c7eaff;
+   margin-bottom: 20px;
+ }
+ .tweet>h1
+ {
+    color: #1DA1F2;
+ }

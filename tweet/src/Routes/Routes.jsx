@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom"
 import Signin from "../Components/Sign/Signin"
 import Signup from "../Components/Sign/Signup"
 import Profile from "../Components/Profile/Profile"
+import Dash from '../Components/Dashboard/Dash'
 
 
 function Routes() {
@@ -36,6 +37,10 @@ function Routes() {
 
                <Route path="/profile" exact>
                    <Profile/>
+               </Route>
+
+               <Route path="/dash" exact>
+                   <Dash/>
                </Route>
 
             </Switch>

@@ -1,0 +1,32 @@
+
+
+.dash
+{
+    border: 0px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.left
+{
+   border-right: 0px solid lightgray;
+   height: 700px;
+   width: 22%;
+   padding-left: 5%;
+   position: sticky;
+   top: 0;
+}
+
+.mid
+{
+    border: 1px solid lightgray;
+    height: 800px;
+    width: 36%;
+}
+
+.right
+{
+    border: 0px solid black;
+    height: 800px;
+    width: 30%;
+}

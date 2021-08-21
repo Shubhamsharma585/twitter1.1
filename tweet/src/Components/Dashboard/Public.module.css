@@ -1,0 +1,71 @@
+
+.main
+{
+
+}
+.mine
+{
+   border-bottom: 1px solid lightgray;
+}
+.minetop
+{
+   display: flex;
+   flex-direction: row;
+}
+.minetop>img
+{
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: 10px;
+}
+
+.minebottom
+{
+
+}
+
+.top
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+.top>h2
+{
+   text-align: left;
+   border-bottom: 1px solid lightgray;
+   padding-left: 20px;
+   padding-bottom: 16px;
+}
+
+.inp
+{
+    border: 0px solid lightgray;
+    border-radius: 20px;
+    height: 50px; 
+    width: 70%;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 0px;
+    padding: 10px;
+}
+.inp:focus
+{
+   outline: none;
+}
+
+ 
+.tweet
+{
+  border: solid 1px #1DA1F2;
+  border-radius: 10px;
+  height: 100px;
+  background-color:#c7eaff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.tweet>h1
+{
+   color: #1DA1F2;
+}

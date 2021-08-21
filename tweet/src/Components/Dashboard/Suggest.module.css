@@ -1,0 +1,61 @@
+
+
+ .inp1
+ {
+    width: 75%;
+    height:40px;
+    border: 0px solid lightgray;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: rgb(235, 235, 235);
+    font-size: 18px;
+    padding-left: 20px;
+    margin: auto;
+ }
+
+ .inp
+ {
+    width: 80%;
+    border: 0px solid lightgray;
+    border-radius: 30px;
+    background-color: rgb(235, 235, 235);
+    font-size: 18px;
+    padding-left: 20px;
+    position: relative;
+    top: -10px;
+ }
+ .inp:focus
+ { 
+     outline: none;
+ }
+
+ .body
+ {
+    width: 70%;
+    height: 540px;
+    overflow: scroll;
+    border: 0px solid lightgray;
+    border-radius: 20px;
+    background-color: rgb(235, 235, 235);
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+ }
+
+ .body>h3
+ {
+     text-align: left;
+ } 
+
+ .follow
+ {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     padding-bottom: 10px;
+     border-bottom: 2px solid rgb(194, 194, 194);
+     margin-bottom: 30px;
+ }

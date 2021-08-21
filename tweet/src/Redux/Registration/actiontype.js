@@ -10,4 +10,6 @@ export const LOGIN_SUCCESS = "LOGIN_SUCCESS"
  
 //logout
 export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS"
+export const TWEET_SUCCESS = "TWEET_SUCCESS"
+export const FOLLOW_SUCCESS = "FOLLOW_SUCCESS"
  

@@ -1,0 +1,37 @@
+ 
+ .cont
+ {
+     border: 0px solid black;
+     height: 380px;
+     background-color: white;
+     padding-top: 20px;
+ }
+  
+ li
+ {
+     font-size: 24px;
+     list-style: none;
+     text-align: left;
+     margin-bottom: 20px;
+     cursor: pointer;
+ }
+
+ .tweet
+ {
+     background-color: #1DA1F2;
+     border-radius: 30px;
+     width: 50%;
+     height: 40px;
+     padding-top: 5px;
+ }
+ 
+ 
+ .tweet>p
+ {
+     color: white;
+     font-weight: 700;
+     font-size: 18px;
+     margin: auto;
+     margin-top: 6px;
+     cursor: pointer;
+ }
