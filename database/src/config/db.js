@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const DB = `mongodb+srv://Shubhamsharma585:Shubham@1234@cluster0.ygh5u.mongodb.net/twitter?retryWrites=true&w=majority`
+const DB = `mongodb+srv://@cluster0.ygh5u.mongodb.net/twitter?retryWrites=true&w=majority`
  
  
 
